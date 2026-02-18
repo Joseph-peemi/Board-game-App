@@ -1,0 +1,7 @@
+target/
+.terraform/
+terraform.tfstate*
+.terraform.lock.hcl
+*.tfvars
+main.tf
+provider.tf
