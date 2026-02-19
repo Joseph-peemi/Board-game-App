@@ -42,7 +42,7 @@ pipeline {
                         -Dsonar.projectKey=Board-game \
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://localhost:9000 \
-                        -Dsonar.login=your-sonar-token'''
+                        -Dsonar.login=Sonarqube-token'''
         }
       }
         }
