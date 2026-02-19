@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Checkout') {
       steps {
-        git branch: 'main', credentialsId: 'github', url: 'https://github.com/Joseph-peemi/Board-game.git'
+        git branch: 'main', credentialsId: 'github', url: 'https://github.com/Joseph-peemi/Board-game-App.git'
       }
         }
 
