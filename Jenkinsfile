@@ -42,7 +42,8 @@ pipeline {
                         -Dsonar.projectKey=Board-game \
                         -Dsonar.sources=. \
                         -Dsonar.host.url=http://172.31.82.68:9000 \
-                        -Dsonar.token=Sonarqube-token'''
+                        -Dsonar.token=Sonarqube-token \
+                        -Dsonar.java.binaries=target/classes'''
         }
       }
         }
