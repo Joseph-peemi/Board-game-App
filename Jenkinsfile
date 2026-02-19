@@ -70,12 +70,6 @@ pipeline {
       }
         }
 
-        stage('Docker Image Scan') {
-      steps {
-        sh 'trivy image --format table -o trivy-docker-report.html abuchijoe/board-game:latest'
-      }
-        }
-
         stage('Build and Push Docker Image') {
       steps {
         script {
@@ -84,6 +78,12 @@ pipeline {
             sh 'docker push abuchijoe/board-game:latest'
           }
         }
+      }
+        }
+
+        stage('Docker Image Scan') {
+      steps {
+        sh 'trivy image --format table -o trivy-docker-report.html abuchijoe/board-game:latest'
       }
         }
 
