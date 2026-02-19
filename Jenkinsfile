@@ -73,7 +73,7 @@ pipeline {
         stage('Build and Push Docker Image') {
       steps {
         script {
-          withDockerRegistry(credentialsId: 'dockerhub', toolName: 'docker') {
+          withDockerRegistry(credentialsId: 'dockerhub') {
             sh 'docker build -t abuchijoe/board-game:latest .'
             sh 'docker push abuchijoe/board-game:latest'
           }
